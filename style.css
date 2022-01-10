@@ -1,0 +1,143 @@
+main {
+    transform: scale(85%) translate(-10%, -10%);
+}
+body {
+    background-color: black;
+}
+
+.calculator {
+    background-color: grey;
+    background-image: linear-gradient(170deg, rgb(13, 20, 32,1), rgba(56, 87, 141, 0.466));
+    width: 650px;
+    height: 800px;
+
+    border: 7px solid whitesmoke;
+    border-radius: 30px;
+
+    padding: 13px;
+
+}
+
+.screen {
+    background-image: linear-gradient(110deg, rgb(202, 202, 202), rgb(236, 236, 236));
+    /* background-image: linear-gradient(110deg, rgb(0, 0, 0), rgb(32, 32, 32)); */
+    
+    width: 95%;
+    height: 150px;
+    
+    margin: 30px;
+    margin-left: 10px;
+
+    border: 5px solid whitesmoke;    
+    border-radius: 100px 100px 100px 100px;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.screen:active {
+    background-image: linear-gradient(110deg, rgb(0, 0, 0), rgb(32, 32, 32));
+}
+
+section input {
+    width: 500px;
+    
+    position: relative;
+    right: 50px;
+
+    margin: 0;
+
+    font-family: Orbitron, sans-serif;
+    font-size: 75px;
+    text-align: right;
+    justify-content: right;
+
+    border: none;
+    background-color: transparent;
+    
+}
+
+.screen:active > input{
+    color: red;
+}
+
+.history {
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+button {
+    margin: 5px;
+
+    background-image: radial-gradient(at 50% 60%, white, rgb(211, 211, 211));
+    /* background-image: radial-gradient(rgb(32, 32, 32), rgb(0, 0, 0)); */
+    color: black;
+
+    width: 150px;
+    height: 100px;
+
+    border: whitesmoke solid 3px;
+    border-radius: 50px;
+
+    font-family: Orbitron, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+button:hover {
+    background-image: radial-gradient(rgb(82, 130, 211), rgb(28, 43, 68));
+    border: none;
+    border: 3px solid whitesmoke;
+
+}
+
+button:active {
+    background-image: radial-gradient(rgb(82, 130, 211), rgb(28, 43, 68));
+    border: 3px solid red;
+    color: red;
+}
+
+.bigButton {
+    width: 310px;
+}
+
+.number, .decimal{
+    background-image: radial-gradient(rgb(32, 32, 32), rgb(0, 0, 0));
+    color: whitesmoke;
+
+}
+
+.operator {
+    background-image: radial-gradient(red, rgb(129, 27, 27));
+    color: whitesmoke;
+}
+
+.delete, .ac {
+    color: red;
+    border-color: red;
+}
+
+.decimal {
+    border-color: red;
+}
+
+.brand {
+    color: rgb(219, 219, 219);
+    
+    font-family: Orbitron, sans-serif;
+    font-size: 20px;
+
+    position: relative;
+
+    top: 10px;
+    left: 150px;
+}
